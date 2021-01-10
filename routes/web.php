@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'UserController@index')->name('user.index');
-Route::post('users', 'UserController@store')->name('user.store');
-Route::delete('users/{id}', 'UserController@destroy')->name('user.destroy');
+Route::post('users', 'UserController@store')->name('users.store');
+Route::delete('users/{user}', 'UserController@destroy')->name('users.destroy');

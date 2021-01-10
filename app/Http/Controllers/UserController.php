@@ -9,7 +9,7 @@ class UserController extends Controller
 {
     public function index() 
     {
-        $users = User::latest()->get();
+        $users = User::All();
 
         return view('users.index', [
             'users' => $users
@@ -29,7 +29,7 @@ class UserController extends Controller
 
     public function destroy(User $user) 
     {
-        $user->delete;
+        $user->delete();
 
         return back();
     }
