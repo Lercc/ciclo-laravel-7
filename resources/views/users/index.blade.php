@@ -28,13 +28,28 @@
                 <form action="{{ route('users.store') }}" method="POST">
                   <div class="row">
                     <div class="col-sm-3">
-                    <input type="text" name="name" class="form-control" placeholder="Nombre" value="{{ old('name') }}">
+                      <input 
+                        type="text" 
+                        name="name" 
+                        class="form-control" 
+                        placeholder="Nombre" 
+                        value="{{ old('name') }}">
                     </div>
                     <div class="col-sm-4">
-                      <input type="text" name="email" class="form-control" placeholder="Correo" value="{{ old('email') }}">
+                      <input 
+                        type="text" 
+                        name="email" 
+                        class="form-control" 
+                        placeholder="Correo" 
+                        value="{{ old('email') }}">
                     </div>
                     <div class="col-sm-3">
-                      <input type="password" name="password" class="form-control" placeholder="Contraseña" value="{{ old('password') }}">
+                      <input 
+                        type="password" 
+                        name="password" 
+                        class="form-control" 
+                        placeholder="Contraseña" 
+                        value="{{ old('password') }}">
                     </div>
                     <div class="col-auto">
                       @csrf
