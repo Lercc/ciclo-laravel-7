@@ -8,6 +8,6 @@
 
 - config\app -> locale => 'es'
 
--resource\lang -> create folder 'es'
+- resource\lang -> create folder 'es'
                -> capy and paste 'es/validations.php' from https://github.com/Laravel-Lang/lang
                -> run 'php artisan config:cache' to watch changes
