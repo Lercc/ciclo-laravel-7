@@ -18,10 +18,25 @@
 #### Capa de lógica adicional de filtrado de peticiones HTTP
 
 - Route::resource() -> Permite gestionar 7 rutas adjutadas a un Controlador con 7 métodos.
-    - NameController@show
-    - NameController@destroy
-    - NameController@store
-    - NameController@update
+    - NameController@index        -> usualmente para listar
+    - NameController@store        -> usualmente para salvar
+    - NameController@create       -> usualmente para crear
+    - NameController@show         -> usualmente para mostrar un registro
+    - NameController@update       -> usualmente para actualizar
+    - NameController@destroy      -> usualmente para eliminar
+    - NameController@edit         -> usualmente para editar un registro
+
+|-----------|-------------------|---------------|---------------------------------------------|------------|
+| Method    | URI               | Name          | Action                                      | Middleware |
+|-----------|-------------------|---------------|---------------------------------------------|------------|
+| GET|HEAD  | pages             | pages.index   | App\Http\Controllers\PageController@index   | web        |
+| POST      | pages             | pages.store   | App\Http\Controllers\PageController@store   | web        |
+| GET|HEAD  | pages/create      | pages.create  | App\Http\Controllers\PageController@create  | web        |
+| GET|HEAD  | pages/{page}      | pages.show    | App\Http\Controllers\PageController@show    | web        |
+| PUT|PATCH | pages/{page}      | pages.update  | App\Http\Controllers\PageController@update  | web        |
+| DELETE    | pages/{page}      | pages.destroy | App\Http\Controllers\PageController@destroy | web        |
+| GET|HEAD  | pages/{page}/edit | pages.edit    | App\Http\Controllers\PageController@edit    | web        |
+|-----------|-------------------|---------------|---------------------------------------------|------------|
 
 - Generar un controlador:
     <pre>php artisan make:controller [NameController]</pre>
