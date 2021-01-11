@@ -4,14 +4,10 @@
 - php artisan tinker
 -- factory(App\User::class, 12)->create()
 
-## Code of Conduct
+### LARAVEL LANG ES VALIDATIONS
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- config\app -> locale => 'es'
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+-resource\lang -> create folder 'es'
+               -> capy and paste 'es/validations.php' from https://github.com/Laravel-Lang/lang
+               -> run 'php artisan config:cache' to watch changes
