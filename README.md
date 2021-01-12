@@ -17,6 +17,8 @@
 ### MIDDLEWARE: FILTROS A PETICIONES HTTP
 #### Capa de lógica adicional de filtrado de peticiones HTTP
 
+
+## ROUTE AVANZADO
 - Route::resource() -> Permite gestionar 7 rutas adjutadas a un Controlador con 7 métodos.
     - NameController@index        -> usualmente para listar
     - NameController@store        -> usualmente para salvar
@@ -56,3 +58,7 @@
     - -r, --resource        Indicates if the generated controller should be a resource controller
     - --api             Indicates if the generated controller should be an API controller
     <pre>php artisan make:model [NameController] -a | -c | -f | -m | -s | -r | --api</pre>
+
+## REQUEST
+    - Capa de laravle que permite hacer validaciones fuera del controller en un request
+    <pre>php artisan make:reques NameRequest</pre>

@@ -165,6 +165,7 @@ return [
         'gender'                => 'género',
         'hour'                  => 'hora',
         'last_name'             => 'apellido',
+        'lastname'             => 'apellidos',
         'message'               => 'mensaje',
         'minute'                => 'minuto',
         'mobile'                => 'móvil',
