@@ -81,3 +81,8 @@
 
     - compilar
         - npm run dev
+
+### END
+    - Curso de introduccion a laravel 
+    - LARAVEL 7.X 
+    - Laravel ui 2.4
