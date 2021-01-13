@@ -62,3 +62,22 @@
 ## REQUEST
     - Capa de laravle que permite hacer validaciones fuera del controller en un request
     <pre>php artisan make:reques NameRequest</pre>
+
+## LARAVEL UI
+    - composer require laravel/ui --dev
+
+    - php artisan ui bootstrap --auth
+    - php artisan ui vue --auth
+    - php artisan ui react --auth
+
+    - instalar dependiencias de JS
+        - npm install
+    
+    - ver las dependencias desactualizadas
+        - npm outdate
+
+    - actualizar las dependencias
+        - npm update
+
+    - compilar
+        - npm run dev

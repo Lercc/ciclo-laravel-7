@@ -21,3 +21,7 @@ Route::resource('pages', 'PageController');
 
 Route::get('leads/create','LeadController@create')->name('leads.create');
 Route::post('leads/store','LeadController@store')->name('leads.store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
